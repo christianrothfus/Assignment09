@@ -18,6 +18,9 @@ public class Assignment9 {
         tracker.addMovie("alice", inception);
         tracker.addMovie("alice", up);
         tracker.addMovie("alice", matrix);
+        tracker.addMovie("alice", matrix);
+        tracker.addMovie("alice", frozen);
+        tracker.addMovie("alice", frozen);
 
         tracker.addMovie("bob", jaws);
         tracker.addMovie("bob", matrix);
@@ -25,6 +28,9 @@ public class Assignment9 {
         // getMovies returns the set of movies for one user
         System.out.println("=== getMovies ===");
         System.out.println("alice: " + tracker.getMovies("alice"));
-      
+
+        // hasWatched returns a boolean representing whether the user has watched a movie (true) or not (false)
+        System.out.println("=== hasWatched ===");
+        System.out.println("alice: " + tracker.hasWatched("alice", matrix));
     }
 }
